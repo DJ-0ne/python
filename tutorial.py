@@ -28,6 +28,12 @@ if (user_input == 2):
         else:
             print(f"you lose {options[choice]}\nAi choice {options[Ai]}")
 
+        quit = input("do you want to quit (y/n): ")
+        if(quit == 'y'):
+            break
+        else:
+            continue
+
 
         
         
