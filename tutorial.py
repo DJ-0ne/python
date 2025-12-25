@@ -1,17 +1,17 @@
 import random
 
-fruits = [1,2,3,4]
+ops = [1,2]
 options = {'r' : '🪨' , 'p' : '📜📄', 's' :'✂️'}
 choices = tuple(options.keys())
 
 user_input = int(input("Select Option(1,2,3,4):"))
 
-if (user_input == 1):
+if (user_input == ops[0]):
     guess = int(input("Guess a number from 1-10:"))
     guesser = random.randint(1,10)
     print(f"The random number is {guesser}")
 
-if (user_input == 2):
+if (user_input == ops[1]):
     while True:
         choice = input("Enter R,P,S: ").lower()
         Ai = random.choice(choices)
